@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Little Calculator</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/little-calculator/images/favicon.svg"
+    />
+    <link rel="stylesheet" href="/little-calculator/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="calculator">
+          <!-- Display output of the keyboard input -->
+          <div>
+            <input class="show-result" type="text" id="result" value="" />
+          </div>
+
+          <!-- Keyboard layout -->
+          <div class="grid-layout">
+            <div class="layout">
+              <input
+                type="button"
+                class="operator"
+                value="+"
+                id="action"
+                onclick="inputOperator('+')"
+              />
+              <input
+                type="button"
+                class="operator"
+                value="−"
+                id="action"
+                onclick="inputOperator('-')"
+              />
+              <input
+                type="button"
+                class="operator"
+                value="×"
+                id="action"
+                onclick="inputOperator('*')"
+              />
+
+              <input
+                type="button"
+                class="number"
+                value="7"
+                id="input-number"
+                onclick="displayNumber(7)"
+              />
+              <input
+                type="button"
+                class="number"
+                value="8"
+                id="input-number"
+                onclick="displayNumber(8)"
+              />
+              <input
+                type="button"
+                class="number"
+                value="9"
+                id="input-number"
+                onclick="displayNumber(9)"
+              />
+              <input
+                type="button"
+                class="number"
+                value="4"
+                id="input-number"
+                onclick="displayNumber(4)"
+              />
+              <input
+                type="button"
+                class="number"
+                value="5"
+                id="input-number"
+                onclick="displayNumber(5)"
+              />
+              <input
+                type="button"
+                class="number"
+                value="6"
+                id="input-number"
+                onclick="displayNumber(6)"
+              />
+              <input
+                type="button"
+                class="number"
+                value="1"
+                id="input-number"
+                onclick="displayNumber(1)"
+              />
+              <input
+                type="button"
+                class="number"
+                value="2"
+                id="input-number"
+                onclick="displayNumber(2)"
+              />
+              <input
+                type="button"
+                class="number"
+                value="3"
+                id="input-number"
+                onclick="displayNumber(3)"
+              />
+              <input
+                type="button"
+                class="number"
+                value="0"
+                id="input-number"
+                onclick="displayNumber(0)"
+              />
+              <input
+                type="button"
+                class="number"
+                value="."
+                id="input-number"
+                onclick="displayNumber('.')"
+              />
+              <input
+                type="button"
+                class="operator-reset"
+                value="AC"
+                id="result"
+                onclick="clearOperation()"
+              />
+            </div>
+            <div class="right-layout">
+              <input
+                type="button"
+                class="operator"
+                value="÷"
+                id="result"
+                onclick="inputOperator('/')"
+              />
+              <input
+                type="button"
+                class="operator-equal"
+                value="="
+                id="equal-to"
+                onclick="clearResult()"
+              />
+            </div>
+          </div>
+        </div>
+        <script src="/little-calculator/script.js" async defer></script>
+      </div>
+    </main>
+  </body>
+</html>
